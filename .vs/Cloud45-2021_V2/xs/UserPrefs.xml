@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{FF9B206D-7977-473C-B9B4-AFFFD1A64A5B}|Default">
+  <MonoDevelop.Ide.ItemProperties.MVC__ADM PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.ClassModelsLib FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Razor__WebStore PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Cloud45-2021_V2" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
