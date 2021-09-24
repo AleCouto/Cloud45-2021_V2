@@ -1,11 +1,14 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Bio Plants";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <h1 class="display-4">Bio Plants</h1>
+    <a class="display-4 nav-link text-dark" asp-page="/Store/Index">Bio Plants</a>
     <p>Sua vida mais verde</p>
+</div>
+
+<div class="text-center">
+    <a asp-page="/Store/Index"><img src="~/images/brand.png" alt="Bio Plants" /></a>
 </div>
