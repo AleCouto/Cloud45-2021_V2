@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MVC_ADM.Models.Product>
+
+@{ ViewData["Title"] = "Bio Plants"; }
+
+
+<div class="row" id="myCard">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+                <div class="bg-image hover-overlay">
+                    <a asp-action="Details" asp-route-id="@item.ProductId">
+                        <img src="@item.ImgFotoProduct" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 id="title" class="card-title bg-light">@item.ProductName</h5>
+                    <h6>@item.Price €</h6>
+                    <p class="card-text">
+                        @item.Description
+                    </p>
+                    <a type="button" asp-action="Create">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

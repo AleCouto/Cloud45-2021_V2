@@ -1,0 +1,21 @@
+﻿@model MVC_ADM.Models.Product
+
+@{ ViewData["Title"] = "Details"; }
+
+<div class="jumbotron">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="@Model.ImgFotoProduct" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@Html.DisplayFor(model => model.ProductName)</h5>
+            <p class="card-text">@Html.DisplayFor(model => model.Description)</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Html.DisplayFor(model => model.Price)</li>
+            <li class="list-group-item">@Html.DisplayFor(model => model.Category)</li>
+        </ul>
+        <div class="card-body">
+            <a asp-action="Index" class="card-link">Add</a>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</div>

@@ -1,21 +1,19 @@
-﻿<Properties StartupConfiguration="{74174B26-1B8F-4375-B288-CC653F24AE47}|Default">
+﻿<Properties StartupConfiguration="Multiple Projects">
   <MonoDevelop.Ide.ItemProperties.MVC__ADM PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.Razor__WebStore PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Cloud45-2021_V2" expanded="True">
             <Node name="MVC_ADM" expanded="True" />
-            <Node name="MVC_WebStore" expanded="True" />
-            <Node name="Razor_WebStore" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Store" expanded="True">
-                  <Node name="Index.cshtml" expanded="True" />
+            <Node name="MVC_WebStore" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home2" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
                 </Node>
-                <Node name="Index.cshtml" expanded="True">
-                  <Node name="Index.cshtml.cs" selected="True" />
-                </Node>
+                <Node name="Shared" expanded="True" />
+                <Node name="ShopStore" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -23,6 +21,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.MVC__WebStore PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -32,8 +31,9 @@
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
       <Items>
+        <StartupItem ItemId="{1AFC5263-ED34-4268-803E-4532C2FBBB5E}" ItemName="API" ConfigurationId="Default" />
         <StartupItem ItemId="{FF9B206D-7977-473C-B9B4-AFFFD1A64A5B}" ItemName="MVC_ADM" ConfigurationId="Default" />
-        <StartupItem ItemId="{6CEF046D-6CC3-4028-A342-AF2A835E8921}" ItemName="Razor_WebStore" ConfigurationId="Default" />
+        <StartupItem ItemId="{74174B26-1B8F-4375-B288-CC653F24AE47}" ItemName="MVC_WebStore" ConfigurationId="Default" />
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>

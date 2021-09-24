@@ -50,8 +50,10 @@ namespace MVC_WebStore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+                    //Alternar Rota para teste
+                    //pattern: "{controller=Home2}/{action=Index}/{id?}");
+                    pattern: "{controller=ShopStore}/{action=Index}/{id?}");
+        });
         }
     }
 }

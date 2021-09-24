@@ -26,6 +26,7 @@ namespace MVC_ADM
         {
             services.AddControllersWithViews();
 
+            // Data base configure services
             services.AddDbContext<DataBaseStore2>(options =>
                     options.UseSqlite(Configuration.GetConnectionString("DataBaseStore2")));
         }
