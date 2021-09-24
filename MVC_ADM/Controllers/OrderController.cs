@@ -47,7 +47,7 @@ namespace MVC_ADM.Controllers
         // GET: Order/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "Email");
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "UserName");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace MVC_ADM.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "Email", order.UserId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "UserName", order.UserId);
             return View(order);
         }
 
@@ -81,7 +81,10 @@ namespace MVC_ADM.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "Email", order.UserId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "UserName", order.UserId);
+            // Resolver lista de produtos
+            ViewData["Product"] = new SelectList(_context.Set<Product>(), "Product", "ProductName", order.Product);
+
             return View(order);
         }
 
@@ -90,7 +93,7 @@ namespace MVC_ADM.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("OrderId,UserId,Quantity,Price")] Order order)
+        public async Task<IActionResult> Edit(int id, [Bind("OrderId,UserId,ProductId,Quantity,Price")] Order order, User user, Product product)
         {
             if (id != order.OrderId)
             {
@@ -117,7 +120,9 @@ namespace MVC_ADM.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "Email", order.UserId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "UserName", order.UserId);
+            // Resolver lista de produtos
+            ViewData["Product"] = new SelectList(_context.Set<Product>(), "Product", "ProductName", order.Product);
             return View(order);
         }
 

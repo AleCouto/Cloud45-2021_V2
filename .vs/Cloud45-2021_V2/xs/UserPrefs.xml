@@ -1,17 +1,27 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
   <MonoDevelop.Ide.ItemProperties.MVC__ADM PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVC_ADM/Controllers/BlobStorageController.cs">
+    <Files>
+      <File FileName="MVC_ADM/Views/Product/Create.cshtml" Line="47" Column="111" />
+      <File FileName="MVC_ADM/Controllers/ProductController.cs" />
+      <File FileName="MVC_ADM/Controllers/BlobStorageController.cs" Line="20" Column="51" />
+      <File FileName="MVC_ADM/appsettings.json" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Cloud45-2021_V2" expanded="True">
-            <Node name="MVC_ADM" expanded="True" />
+            <Node name="MVC_ADM" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="BlobStorageController.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Product" expanded="True" />
+              </Node>
+            </Node>
             <Node name="MVC_WebStore" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home2" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
                 <Node name="Shared" expanded="True" />
                 <Node name="ShopStore" expanded="True" />
               </Node>

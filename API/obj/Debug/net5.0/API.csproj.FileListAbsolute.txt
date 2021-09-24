@@ -161,3 +161,7 @@
 /Users/acouto/Projects/Cloud45-2021_V2/API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/acouto/Projects/Cloud45-2021_V2/API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/acouto/Projects/Cloud45-2021_V2/API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/acouto/Projects/Cloud45-2021_V2/API/bin/Debug/net5.0/Azure.Core.dll
+/Users/acouto/Projects/Cloud45-2021_V2/API/bin/Debug/net5.0/Azure.Storage.Blobs.dll
+/Users/acouto/Projects/Cloud45-2021_V2/API/bin/Debug/net5.0/Azure.Storage.Common.dll
+/Users/acouto/Projects/Cloud45-2021_V2/API/bin/Debug/net5.0/System.Memory.Data.dll

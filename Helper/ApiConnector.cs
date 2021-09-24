@@ -14,7 +14,7 @@ namespace Helper
 
         public ApiConnector()
         {
-            url = "https://localhost:64724/api/";
+            url = "https://localhost:27287/api/";
         }
 
         public ApiConnector(string _url)

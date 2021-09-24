@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 using MVC_ADM.Models;
 using Newtonsoft.Json;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace MVC_WebStore.Controllers
 {
@@ -37,7 +36,7 @@ namespace MVC_WebStore.Controllers
             return View(lst);
         }
 
-      
+
         public ActionResult Details(int id)
         {
             Product product = new Product();
@@ -58,18 +57,31 @@ namespace MVC_WebStore.Controllers
 
 
 
-        // CREATE AND DELETE A NEW ORDER \\
+        // CREATE AND DELETE A NEW ORDER \\ em desesnvolvimento
 
-        // GET: Order/Create
-        public ActionResult Create()
+        // GET: Order/Edit/5
+        public ActionResult AddOrder(int id)
         {
-            return View();
+            Order order = new Order();
+            try
+            {
+                //Connect To API using class Helper
+                ApiConnector ac = new ApiConnector();
+                string result = ac.GetId(ConstantsProduct.APIController + ConstantsProduct.APIController_Action_GetId, id);
+                // Convert Json
+                order = JsonConvert.DeserializeObject<Order>(result);
+            }
+            catch (Exception ex)
+            {
+                Debug.Print(ex.Message);
+            }
+            return View(order);
         }
 
-        // POST: Categorys/Create
+        // POST: Order/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult AddOrder(int id, IFormCollection collection)
         {
             Order obj = new Order();
             foreach (var item in collection)
@@ -79,21 +91,26 @@ namespace MVC_WebStore.Controllers
                     case "OrderId":
                         obj.OrderId = int.Parse(item.Value);
                         break;
+                    case "UserId":
+                        obj.UserId = int.Parse(item.Value);
+                        break;
+                    //case "ProductId":
+                    //    obj.ProductId = int.Parse(item.Value);
+                    //    break;
                     case "Quantity":
                         obj.Quantity = int.Parse(item.Value);
                         break;
                     case "Price":
                         obj.Price = decimal.Parse(item.Value);
                         break;
-                    case "UserId":
-                        obj.UserId = int.Parse(item.Value);
-                        break;
                 }
             }
+            // Convert Json
             string data = JsonConvert.SerializeObject(obj);
 
+            //Connect To API using class Helper
             ApiConnector ac = new ApiConnector();
-            string result = ac.Post(ConstantsOrder.APIController + ConstantsOrder.APIController_Action_Post, data);
+            string result = ac.Put(ConstantsOrder.APIController + ConstantsOrder.APIController_Action_Put + obj.OrderId, data);
             return RedirectToAction(nameof(Index));
         }
 
@@ -131,14 +148,17 @@ namespace MVC_WebStore.Controllers
                         case "OrderId":
                             obj.OrderId = int.Parse(item.Value);
                             break;
+                        case "UserId":
+                            obj.UserId = int.Parse(item.Value);
+                            break;
+                        //case "ProductId":
+                        //    obj.ProductId = int.Parse(item.Value);
+                        //    break;
                         case "Quantity":
                             obj.Quantity = int.Parse(item.Value);
                             break;
                         case "Price":
                             obj.Price = decimal.Parse(item.Value);
-                            break;
-                        case "UserId":
-                            obj.UserId = int.Parse(item.Value);
                             break;
                     }
                 }
@@ -161,13 +181,91 @@ namespace MVC_WebStore.Controllers
         // FILTER  PRODUCTS BY CATEGORY \\
 
 
-        //Implementar metodo Getpantas para filtrar
+        // filter by Category
         public IActionResult GetPlants()
         {
             List<Product> lst = new List<Product>();
+            try
+            {
+                //Connect To API using class Helper
+                ApiConnector ac = new ApiConnector();
+                string result = ac.Get(ConstantsProduct.APIController + ConstantsProduct.APIController_Action_Get);
 
+                // convert Json
+                lst = JsonConvert.DeserializeObject<List<Product>>(result);
+            }
+            catch (Exception ex)
+            {
+                Debug.Print(ex.Message);
+            }
 
-            return ((IActionResult)lst);
+            var lst2 = new List<Product>();
+            foreach (var item in lst)
+            {
+                if (item.CategoryId == 1)
+                {
+                    lst2.Add(item);
+                }
+            }
+            return View(lst2);
+        }
+
+        // filter by Category
+        public IActionResult GetFlowers()
+        {
+            List<Product> lst = new List<Product>();
+            try
+            {
+                //Connect To API using class Helper
+                ApiConnector ac = new ApiConnector();
+                string result = ac.Get(ConstantsProduct.APIController + ConstantsProduct.APIController_Action_Get);
+
+                // convert Json
+                lst = JsonConvert.DeserializeObject<List<Product>>(result);
+            }
+            catch (Exception ex)
+            {
+                Debug.Print(ex.Message);
+            }
+
+            var lst2 = new List<Product>();
+            foreach (var item in lst)
+            {
+                if (item.CategoryId == 2)
+                {
+                    lst2.Add(item);
+                }
+            }
+            return View(lst2);
+        }
+
+        // filter by Category
+        public IActionResult GetProdsCult()
+        {
+            List<Product> lst = new List<Product>();
+            try
+            {
+                //Connect To API using class Helper
+                ApiConnector ac = new ApiConnector();
+                string result = ac.Get(ConstantsProduct.APIController + ConstantsProduct.APIController_Action_Get);
+
+                // convert Json
+                lst = JsonConvert.DeserializeObject<List<Product>>(result);
+            }
+            catch (Exception ex)
+            {
+                Debug.Print(ex.Message);
+            }
+
+            var lst2 = new List<Product>();
+            foreach (var item in lst)
+            {
+                if (item.CategoryId == 3)
+                {
+                    lst2.Add(item);
+                }
+            }
+            return View(lst2);
         }
     }
 }

@@ -176,3 +176,12 @@
 /Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/bin/Debug/net5.0/Helper.pdb
 /Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/ShopStore/Details.cshtml.g.cs
 /Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/ShopStore/Index.cshtml.g.cs
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/ShopStore/Alert.cshtml.g.cs
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/ShopStore/AddOrder.cshtml.g.cs
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/ShopStore/GetPlants.cshtml.g.cs
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/ShopStore/GetFlowers.cshtml.g.cs
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/ShopStore/GetProdsCult.cshtml.g.cs
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/bin/Debug/net5.0/Azure.Core.dll
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/bin/Debug/net5.0/Azure.Storage.Blobs.dll
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/bin/Debug/net5.0/Azure.Storage.Common.dll
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/bin/Debug/net5.0/System.Memory.Data.dll

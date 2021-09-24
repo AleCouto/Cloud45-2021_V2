@@ -54,5 +54,10 @@ namespace MVC_ADM.Models
             Amount = amount;
             Category = category;
         }
+
+        public static implicit operator List<object>(Product v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
