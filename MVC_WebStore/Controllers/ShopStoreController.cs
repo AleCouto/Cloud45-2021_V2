@@ -57,31 +57,50 @@ namespace MVC_WebStore.Controllers
 
 
 
-        // CREATE AND DELETE A NEW ORDER \\ em desesnvolvimento
+        // CREATE AND DELETE A NEW ORDER \\
 
         // GET: Order/Edit/5
         public ActionResult AddOrder(int id)
         {
-            Order order = new Order();
+            // Get ProductName and Price
+            Product product = new Product();
             try
             {
                 //Connect To API using class Helper
                 ApiConnector ac = new ApiConnector();
                 string result = ac.GetId(ConstantsProduct.APIController + ConstantsProduct.APIController_Action_GetId, id);
-                // Convert Json
-                order = JsonConvert.DeserializeObject<Order>(result);
+                //Convert Json
+                product = JsonConvert.DeserializeObject<Product>(result);
             }
             catch (Exception ex)
             {
                 Debug.Print(ex.Message);
             }
-            return View(order);
+
+
+            // Get a username list em desesnvolvimento//////////////////////////////////////
+            List<User> lst = new List<User>();
+            try
+            {
+                //Connect To API using class Helper
+                ApiConnector ac = new ApiConnector();
+                string result = ac.Get(ConstantsUser.APIController + ConstantsUser.APIController_Action_Get);
+
+                // convert Json
+                lst = JsonConvert.DeserializeObject<List<User>>(result);
+            }
+            catch (Exception ex)
+            {
+                Debug.Print(ex.Message);
+
+            }
+            return View(product);
         }
 
         // POST: Order/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AddOrder(int id, IFormCollection collection)
+        public ActionResult AddOrder(IFormCollection collection)
         {
             Order obj = new Order();
             foreach (var item in collection)
@@ -94,8 +113,8 @@ namespace MVC_WebStore.Controllers
                     case "UserId":
                         obj.UserId = int.Parse(item.Value);
                         break;
-                    //case "ProductId":
-                    //    obj.ProductId = int.Parse(item.Value);
+                    //case "Product":
+                    //    obj.Product = item.Value;
                     //    break;
                     case "Quantity":
                         obj.Quantity = int.Parse(item.Value);
@@ -110,7 +129,7 @@ namespace MVC_WebStore.Controllers
 
             //Connect To API using class Helper
             ApiConnector ac = new ApiConnector();
-            string result = ac.Put(ConstantsOrder.APIController + ConstantsOrder.APIController_Action_Put + obj.OrderId, data);
+            string result = ac.Post(ConstantsOrder.APIController + ConstantsOrder.APIController_Action_Post, data);
             return RedirectToAction(nameof(Index));
         }
 

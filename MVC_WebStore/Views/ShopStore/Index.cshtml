@@ -19,7 +19,7 @@
                     <p class="card-text">
                         @item.Description
                     </p>
-                    <a type="button" asp-controller="ShopStore" asp-action="AddOrder">Adicionar ao Carrinho</a>
+                    <a type="button" asp-controller="ShopStore" asp-action="AddOrder" asp-route-id="@item.ProductId">Adicionar ao Carrinho</a>
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@
             <li class="list-group-item">@Html.DisplayFor(model => model.Category)</li>
         </ul>
         <div class="card-body">
-            <a asp-controller="ShopStore" asp-action="AddOrder" class="card-link">Adicionar ao Carrinho</a>
+            <a asp-controller="ShopStore" asp-action="AddOrder" asp-route-id="ProductId" class="card-link">Adicionar ao Carrinho</a>
             <a asp-action="Index">Voltar</a>
         </div>
     </div>

@@ -12,7 +12,7 @@ namespace MVC_ADM.Models
 
         [Required(ErrorMessage = "Name")]
         [StringLength(60, MinimumLength = 3)]
-        [Display(Name = "Name")]
+        [Display(Name = "Product Name")]
         public string ProductName { get; set; }
 
         [Required(ErrorMessage = "Price")]
