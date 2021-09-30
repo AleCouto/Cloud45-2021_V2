@@ -5,21 +5,13 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Cloud45-2021_V2" expanded="True">
-            <Node name="Helper" expanded="True" />
-            <Node name="MVC_ADM" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Product" expanded="True" />
-              </Node>
-            </Node>
             <Node name="MVC_WebStore" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="CartController.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Quiz" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
-                <Node name="ShopStore" expanded="True" />
+                <Node name="Cart" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
             </Node>
           </Node>
