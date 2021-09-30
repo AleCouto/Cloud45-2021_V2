@@ -185,3 +185,5 @@
 /Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/bin/Debug/net5.0/Azure.Storage.Blobs.dll
 /Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/bin/Debug/net5.0/Azure.Storage.Common.dll
 /Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/bin/Debug/net5.0/System.Memory.Data.dll
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/Quiz/Index.cshtml.g.cs
+/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/obj/Debug/net5.0/Razor/Views/Login/Index.cshtml.g.cs

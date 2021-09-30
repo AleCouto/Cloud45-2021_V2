@@ -10,6 +10,13 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
+
+        <!--Upload Fotos-->
+        <form asp-action="UpLoadImg" method="post" enctype="multipart/form-data">
+            <input type="file" id="ImgFotoProduct" name="file" multiple="multiple" value="Upload"><br><br>
+            <input type="submit" value="Upload">
+        </form>
+
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ProductId" />
@@ -40,9 +47,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="ImgFotoProduct" class="control-label"></label>
+                <label>@ViewBag.tempdataurl</label>  @*teste*@
                 <input asp-for="ImgFotoProduct" class="form-control" />
                 <span asp-validation-for="ImgFotoProduct" class="text-danger"></span>
             </div>
+            <div></div>
+            <div></div>
+            <!--Submit-->
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

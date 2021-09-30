@@ -14,8 +14,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\ShopStore\" />
+    <None Remove="Views\Quiz\" />
+    <None Remove="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\ShopStore\" />
+    <Folder Include="Views\Quiz\" />
+    <Folder Include="Views\Login\" />
   </ItemGroup>
 </Project>

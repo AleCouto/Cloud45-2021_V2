@@ -1,7 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Azure.Storage.Blobs;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -48,6 +52,7 @@ namespace MVC_ADM.Controllers
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "CategoryName");
+            ViewBag.tempdataurl = TempData["BlobUrl"];
             return View();
         }
 
@@ -82,6 +87,7 @@ namespace MVC_ADM.Controllers
                 return NotFound();
             }
             ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "CategoryName", product.CategoryId);
+            ViewBag.tempdataurl = TempData["BlobUrl"];
             return View(product);
         }
 
@@ -154,6 +160,37 @@ namespace MVC_ADM.Controllers
         private bool ProductExists(int id)
         {
             return _context.Product.Any(e => e.ProductId == id);
+        }
+
+        // Upload Fotos
+        [HttpPost]
+        public IActionResult UpLoadImg(List<IFormFile> file)
+        {
+            // Ligar ao serviço Storage
+            string containername = "alexandrecoutoimages";
+            BlobServiceClient bsc = new BlobServiceClient("DefaultEndpointsProtocol=https;AccountName=asprojeto;AccountKey=a0B+PPewtIG4+ngBo/4uXdEnNq/RGCvVESJat3kcNOdmYTydATc8ik9Y7oumfAJOEJXvfyF5lP3zjOGROOPguA==;EndpointSuffix=core.windows.net");
+            BlobContainerClient bcc = bsc.GetBlobContainerClient(containername);
+            //Se não existir ele cria:
+            bool bbcExists = bcc.Exists();
+            if (bbcExists != true)
+            {
+                bcc = bsc.CreateBlobContainer(containername);
+            }
+
+
+            foreach (var I in file)
+            {
+                var localFileName = Path.GetFileName(I.FileName);
+                BlobClient bc = bcc.GetBlobClient(localFileName);
+                MemoryStream ms = new MemoryStream();
+                I.CopyTo(ms);
+                ms.Position = 0;
+                bc.Upload(ms, true);
+                var blobUrl = bc.Uri.AbsoluteUri;
+                TempData["BlobUrl"] = blobUrl;
+            }
+            return RedirectToAction(nameof(Create));
+
         }
     }
 }

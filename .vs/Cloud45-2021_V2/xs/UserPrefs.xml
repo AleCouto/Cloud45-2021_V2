@@ -1,26 +1,21 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
   <MonoDevelop.Ide.ItemProperties.MVC__ADM PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVC_WebStore/Models/QuizModels.cs">
+    <Files>
+      <File FileName="MVC_WebStore/Models/QuizModels.cs" Line="8" Column="43" />
+      <File FileName="MVC_WebStore/Views/Quiz/Index.cshtml" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Cloud45-2021_V2" expanded="True">
-            <Node name="API" expanded="True">
-              <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="MVC_ADM" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Order.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Order" expanded="True" />
-              </Node>
-            </Node>
             <Node name="MVC_WebStore" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="QuizModels.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True" />
+                <Node name="Quiz" expanded="True" />
                 <Node name="ShopStore" expanded="True" />
               </Node>
             </Node>
@@ -35,7 +30,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/Controllers/ShopStoreController.cs" relfile="MVC_WebStore/Controllers/ShopStoreController.cs" line="134" column="1" />
+      <Breakpoint file="/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/Controllers/ShopStoreController.cs" relfile="MVC_WebStore/Controllers/ShopStoreController.cs" line="137" column="1" />
+      <Breakpoint file="/Users/acouto/Projects/Cloud45-2021_V2/MVC_ADM/Controllers/BlobStorageController.cs" relfile="MVC_ADM/Controllers/BlobStorageController.cs" line="39" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>

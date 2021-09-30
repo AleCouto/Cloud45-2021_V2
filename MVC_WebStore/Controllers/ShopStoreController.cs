@@ -78,6 +78,7 @@ namespace MVC_WebStore.Controllers
             }
 
 
+
             // Get a username list em desesnvolvimento//////////////////////////////////////
             List<User> lst = new List<User>();
             try
@@ -92,8 +93,10 @@ namespace MVC_WebStore.Controllers
             catch (Exception ex)
             {
                 Debug.Print(ex.Message);
-
             }
+
+          
+
             return View(product);
         }
 
