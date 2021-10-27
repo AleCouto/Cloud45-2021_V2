@@ -1,16 +1,19 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
   <MonoDevelop.Ide.ItemProperties.MVC__ADM PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVC_ADM/Views/Category/Create.cshtml">
+    <Files>
+      <File FileName="API/Controllers/CategorysController.cs" Line="1" Column="1" />
+      <File FileName="MVC_ADM/Views/Category/Create.cshtml" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Cloud45-2021_V2" expanded="True">
-            <Node name="MVC_WebStore" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="CartController.cs" selected="True" />
-              </Node>
+            <Node name="MVC_ADM" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Cart" expanded="True" />
+                <Node name="Category" expanded="True">
+                  <Node name="Create.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>
