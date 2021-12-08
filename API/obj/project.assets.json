@@ -7912,11 +7912,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/acouto/Projects/Cloud45-2021_V2/API/API.csproj",
+      "projectUniqueName": "/Users/acouto/Arquivos/DevFolder/Projects_C#/Cloud45-2021_V2/API/API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/acouto/Projects/Cloud45-2021_V2/API/API.csproj",
+      "projectPath": "/Users/acouto/Arquivos/DevFolder/Projects_C#/Cloud45-2021_V2/API/API.csproj",
       "packagesPath": "/Users/acouto/.nuget/packages/",
-      "outputPath": "/Users/acouto/Projects/Cloud45-2021_V2/API/obj/",
+      "outputPath": "/Users/acouto/Arquivos/DevFolder/Projects_C#/Cloud45-2021_V2/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/acouto/.config/NuGet/NuGet.Config"
@@ -7931,8 +7931,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/acouto/Projects/Cloud45-2021_V2/MVC_ADM/MVC_ADM.csproj": {
-              "projectPath": "/Users/acouto/Projects/Cloud45-2021_V2/MVC_ADM/MVC_ADM.csproj"
+            "/Users/acouto/Arquivos/DevFolder/Projects_C#/Cloud45-2021_V2/MVC_ADM/MVC_ADM.csproj": {
+              "projectPath": "/Users/acouto/Arquivos/DevFolder/Projects_C#/Cloud45-2021_V2/MVC_ADM/MVC_ADM.csproj"
             }
           }
         }
@@ -7984,7 +7984,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }

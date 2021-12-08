@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = MVC_ADM
-build_property.ProjectDir = /Users/acouto/Projects/Cloud45-2021_V2/MVC_ADM/
+build_property.ProjectDir = /Users/acouto/Arquivos/DevFolder/Projects_C#/Cloud45-2021_V2/MVC_ADM/

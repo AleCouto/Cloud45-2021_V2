@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bze+QUSbu0fHoclTmVBZsPcoWIoXH3xlvEQwwXyo2BH0XgaGeW+kN125MCXw1U6D0bNkNiKanEjfhmhX7e8c0g==",
+  "dgSpecHash": "1kAQHOthCggO/dcbkKUgG8WIQco2q3PFJqvngG5Da04L4w4zrcTbKyxY5V2u0Mi8PbvRw8CwKZhkZwT/Sbr+cA==",
   "success": true,
-  "projectFilePath": "/Users/acouto/Projects/Cloud45-2021_V2/MVC_WebStore/MVC_WebStore.csproj",
+  "projectFilePath": "/Users/acouto/Arquivos/DevFolder/Projects_C#/Cloud45-2021_V2/MVC_WebStore/MVC_WebStore.csproj",
   "expectedPackageFiles": [
     "/Users/acouto/.nuget/packages/azure.core/1.19.0/azure.core.1.19.0.nupkg.sha512",
     "/Users/acouto/.nuget/packages/azure.storage.blobs/12.10.0/azure.storage.blobs.12.10.0.nupkg.sha512",

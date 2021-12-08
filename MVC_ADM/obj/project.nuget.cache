@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ReLLdLtX6xLnM2ksZwFNfInhgdr8DKoQ5i1EKrzRsV44lEibTqW0gU13tLgO4zXtBtAPDbre4o2/LkmZ7reLKQ==",
+  "dgSpecHash": "kosU/qFjP90TUaUkeE0P0BVR04LK37K4rEqT0AUG2uCvspMSpED2Pu4KPIg+vQBe5086SnoLFAVfdS2oX2h9fw==",
   "success": true,
-  "projectFilePath": "/Users/acouto/Projects/Cloud45-2021_V2/MVC_ADM/MVC_ADM.csproj",
+  "projectFilePath": "/Users/acouto/Arquivos/DevFolder/Projects_C#/Cloud45-2021_V2/MVC_ADM/MVC_ADM.csproj",
   "expectedPackageFiles": [
     "/Users/acouto/.nuget/packages/azure.core/1.19.0/azure.core.1.19.0.nupkg.sha512",
     "/Users/acouto/.nuget/packages/azure.storage.blobs/12.10.0/azure.storage.blobs.12.10.0.nupkg.sha512",
