@@ -5,12 +5,12 @@
       <File FileName="API/appsettings.json" Line="1" Column="1" />
       <File FileName="API/appsettings.Development.json" />
       <File FileName="MVC_ADM/appsettings.json" />
-      <File FileName="MVC_ADM/Startup.cs" Line="29" Column="13" />
-      <File FileName="API/Controllers/CategorysController.cs" Line="1" Column="1" />
+      <File FileName="MVC_ADM/Startup.cs" />
+      <File FileName="API/Controllers/CategorysController.cs" />
       <File FileName="MVC_WebStore/Controllers/ShopStoreController.cs" Line="1" Column="1" />
-      <File FileName="Helper/ApiConnector.cs" Line="1" Column="1" />
-      <File FileName="MVC_WebStore/Controllers/Home2Controller.cs" Line="1" Column="1" />
-      <File FileName="MVC_WebStore/Controllers/CartController.cs" Line="1" Column="1" />
+      <File FileName="Helper/ApiConnector.cs" />
+      <File FileName="MVC_WebStore/Controllers/Home2Controller.cs" />
+      <File FileName="MVC_WebStore/Controllers/CartController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +22,9 @@
               <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="Helper" expanded="True" />
-            <Node name="MVC_ADM" expanded="True" />
+            <Node name="MVC_ADM" expanded="True">
+              <Node name="Migrations" expanded="True" />
+            </Node>
             <Node name="MVC_WebStore" expanded="True">
               <Node name="Controllers" expanded="True">
                 <Node name="ShopStoreController.cs" selected="True" />
